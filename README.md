@@ -9,12 +9,44 @@
 
 ## Commands used for compression/decompression
 
+All the other tools have been installed from [homebrew]([https://www.example.com](https://formulae.brew.sh/)).
+
 ### gzip
 
-Decompress:
+Decompress to a tar file:
 
-`unzip path_to_file` 
+`gunzip path_to_file` 
 
-Compress:
+Compress a tar file:
 
 `gzip path_to_file`
+
+### zopfli
+
+It relies on gzip for decompression, use:
+
+`gunzip path_to_file` 
+
+Compress a tar file:
+
+`zopfli path_to_file`
+
+### xz
+
+Decompress to a tar file:
+
+`xz --decompress path_to_file` 
+
+Compress a tar file:
+
+`xz path_to_file`
+
+### zstd
+
+Decompress to a tar file:
+
+`zstd --decompress path_to_file` 
+
+Compress a tar file:
+
+`zstd path_to_file`
